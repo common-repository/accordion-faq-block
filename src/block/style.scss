@@ -1,0 +1,103 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-cgb-block-my-block  {
+  background: $red;
+  border: 0.2rem solid $black;
+  color: $black;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem;
+}
+.wp-block-pricing-table-block-pricing .single-pricing-table:hover a {
+
+    background: #fff;
+    border-color: #fff;
+    color: #555;
+    text-decoration: none;
+
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table {
+    box-shadow: 0 0 100px rgba(0, 0, 0, .1);
+    border-radius: 6px;
+    padding: 50px 40px;
+    position: relative;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table:hover::before {
+    opacity: 1;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table::before {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    opacity: 0;
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+    background-color: #457aff;
+    background-image: -webkit-linear-gradient(140deg, #457aff, #30d4b9);
+    background-image: linear-gradient(310deg, #457aff, #30d4b9);
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table h3 {
+    font-weight: 300;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table h2 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table h2 small {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table a {
+    position: relative;
+    height: 43px;
+    padding: 0 30px;
+    line-height: 41px;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #555;
+    color: #333;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table small {
+    color: rgba(0, 0, 0, .3);
+    font-size: 16px;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table h2 small {
+    color: #000;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table:hover * {
+    color: #fff;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table:hover a {
+    background: #fff;
+    border-color: #fff;
+    color: #555;
+}
+
+.wp-block-pricing-table-block-pricing .single-pricing-table a:hover {
+    color: #4384F8;
+}

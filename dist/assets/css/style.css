@@ -1,0 +1,197 @@
+/* ---------------------------------------
+    1. Default Settings
+--------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #525252;
+    font-size: 18px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+/* ---------------------------------------
+    2. Spacing & Alignment
+--------------------------------------- */
+
+.ptb-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* ---------------------------------------
+    3. Typhography
+--------------------------------------- */
+h2 {
+    font-weight: 600;
+    font-size: 48px;
+}
+
+p {
+    color: rgba(0, 0, 0, .55);
+    letter-spacing: 0;
+    line-height: 31px;
+}
+
+a:active,
+a:focus,
+a:hover {
+    color: #457aff;
+}
+/* ---------------------------------------
+4. Transition
+--------------------------------------- */
+.impulse-nav>li>a,
+.single-pricing-table::before {
+    transition: all .30s linear;
+}
+
+
+/* ---------------------------------------
+7. blog Post
+--------------------------------------- */
+.single-pricing-table {
+    box-shadow: 0 0 100px rgba(0, 0, 0, .1);
+    border-radius: 6px;
+    padding: 50px 40px;
+    position: relative;
+}
+
+.single-pricing-table:hover::before {
+    opacity: 1;
+}
+
+.single-pricing-table::before {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    opacity: 0;
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+    background-color: #457aff;
+    background-image: -webkit-linear-gradient(140deg, #457aff, #30d4b9);
+    background-image: linear-gradient(310deg, #457aff, #30d4b9);
+}
+
+.single-pricing-table h3 {
+    font-weight: 300;
+}
+
+.single-pricing-table h2 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.single-pricing-table h2 small {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+s
+.single-pricing-table a {
+    position: relative;
+    height: 43px;
+    padding: 0 30px;
+    line-height: 41px;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #555;
+    color: #333;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.single-pricing-table small {
+    color: rgba(0, 0, 0, .3);
+    font-size: 16px;
+}
+
+.single-pricing-table h2 small {
+    color: #000;
+}
+
+.single-pricing-table:hover * {
+    color: #fff;
+}
+
+.single-pricing-table:hover a {
+    background: #fff;
+    border-color: #fff;
+    color: #555;
+}
+
+.single-pricing-table a:hover {
+    color: #4384F8;
+}
+
+
+
+/* =============================================
+==All Responsive View Port==
+============================================= */
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width:992px) and (max-width:1199.98px) {
+
+    .ptb-100 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width:768px) and (max-width:991.98px) {
+
+
+    .ptb-100 {
+        padding-top: 70px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .single-pricing-table {
+        margin-bottom: 30px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width:767.98px) {
+
+    .ptb-100 {
+        padding-top: 60px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    p{
+        line-height: 28px;
+    }
+
+    .single-pricing-table {
+        margin-bottom: 30px;
+    }
+}

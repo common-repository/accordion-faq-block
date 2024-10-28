@@ -1,0 +1,63 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * Accordion styles
+ * Loads on front end and back end
+ */
+.tf-block-accordion {
+  margin-bottom: 1.2em; }
+  .tf-block-accordion .tf-accordion-title p {
+    display: inline; }
+  .tf-block-accordion .tf-accordion-text {
+    padding: 30px;
+    border: 1px solid #ebe1e1; }
+    .tf-block-accordion .tf-accordion-text a {
+      color: inherit;
+      -webkit-box-shadow: 0 -1px 0 inset;
+              box-shadow: 0 -1px 0 inset;
+      text-decoration: none; }
+      .tf-block-accordion .tf-accordion-text a:hover {
+        color: inherit;
+        -webkit-box-shadow: 0 -2px 0 inset;
+                box-shadow: 0 -2px 0 inset; }
+  .tf-block-accordion a {
+    color: inherit;
+    -webkit-box-shadow: 0 -1px 0 inset;
+            box-shadow: 0 -1px 0 inset;
+    text-decoration: none; }
+    .tf-block-accordion a:hover {
+      color: inherit;
+      -webkit-box-shadow: 0 -2px 0 inset;
+              box-shadow: 0 -2px 0 inset; }
+  .tf-block-accordion .editor-rich-text .editor-rich-text__inline-toolbar {
+    display: block;
+    left: 40%; }
+
+.tf-block-accordion + .tf-block-accordion {
+  margin-top: -.6em; }
+
+.tf-accordion-title {
+  background: #f2f2f2;
+  padding: 10px 15px;
+  background: #fff !important;
+  color: #fff !important;
+  padding: 12px 10px 14px 80px;
+  text-decoration: none;
+  background: #1447ea !important;
+  color: #fff;
+  position: relative;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  font-size: 18px; }
+
+.tf-accordion-title::before {
+  content: "\f055";
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  position: absolute;
+  left: 30px; }
